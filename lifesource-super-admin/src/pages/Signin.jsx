@@ -64,7 +64,7 @@ const Signin = () => {
           <form
             id="signup-form"
             className="space-y-6"
-            onSubmit={handleSubmit(onSubmit)}
+            // onSubmit={handleSubmit(onSubmit)}
           >
             <div className="space-y-2">
               <label className="block text-sm font-medium text-[#0A1F44]">
@@ -114,7 +114,8 @@ const Signin = () => {
 
             <button
               type="submit"
-              onClick={handleSubmit}
+              // onClick={handleSubmit}
+              onClick={navigate("/home")}
               className="w-full bg-[#D32F2F] hover:bg-[#D32F2F]/50 text-lg font-semibold text-white py-3 rounded-full transition duration-200 flex items-center justify-center gap-2 cursor-pointer"
             >
               {loading ? (
